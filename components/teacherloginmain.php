@@ -5,7 +5,7 @@
 <div class="container-fluid login-image">
     <div class="row">
         <div class="offset-md-3 col-md-6 mt-5 mb-5">
-            <div class="login-container pt-5 pb-5 bg-dark text-light">
+            <div class="login-container pt-5 pb-5 bg-dark text-light ps-5 pe-5">
                 <h3 class="text-center">Faculty Login</h3>
                 <form action="#" autocomplete="off" method="post">
                     <div class="mb-3 ps-2 pe-2">
