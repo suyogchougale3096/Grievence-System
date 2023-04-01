@@ -42,18 +42,10 @@
                     <!-- <li class="nav-item"><a href="http://localhost/prj1/Studentlogin.php" class = "nav-link me-lg-3">Administrator Login</a></li>
                     <li class="nav-item"><a href="http://localhost/prj1/Studentlogin.php" class = "nav-link me-lg-3">Student Login</a></li>
                     <li class="nav-item"><a href="http://localhost/prj1/FacultyLogin.php" class = "nav-link me-lg-3">Faculty Login</a></li> -->
-                    <li class="nav-item"><a href="http://localhost/mini-project/components/studloginmain.php" class = "nav-link me-lg-3">Student Login</a></li>
-                    <li class="nav-item"><a href="http://localhost/mini-project/components/teacherloginmain.php" class = "nav-link me-lg-3">Faculty Login</a></li>
                     <li class="nav-item"><a href="#" class = "nav-link me-lg-3">About</a></li>
-                    <li class="nav-item"><a href="#" class = "nav-link me-lg-5">Service</a></li>
+                    <li class="nav-item"><a href="#" class = "nav-link me-lg-3">Service</a></li>
+                    <li class="nav-item"><a href="http://localhost/mini-project/components/mainpage.php" class = "nav-link me-lg-5">Back</a></li>
                 </ul>
             </div>
         </div>
        </div>
-
-       
-
-
-
-    
-    

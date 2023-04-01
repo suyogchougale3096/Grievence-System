@@ -74,8 +74,18 @@ body {
 }
 
 .image-main {
-  /* background-image: url("https://png.pngtree.com/background/20210709/original/pngtree-2-5d-business-office-simple-picture-image_929370.jpg");
+  background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/10219.jpg");
   background-size: cover;
-  background-repeat: no-repeat; */
-  background-color: black;
+  background-repeat: no-repeat;
+}
+
+.login-container {
+  border-bottom-left-radius: 50px;
+}
+
+.login-image {
+  /* background-image: url("https://png.pngtree.com/background/20210715/original/pngtree-color-contrast-gradient-login-interface-login-box-picture-image_1319414.jpg"); */
+  background-image: url("https://4kwallpapers.com/images/wallpapers/abstract-background-colorful-background-blue-background-3440x1440-8624.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
