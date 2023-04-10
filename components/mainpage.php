@@ -1,5 +1,6 @@
 <?php
     include('./mainhead.php');
+    
 ?>
 <div class = "container-fluid pt-5 pb-5 image-main">
     <div class = "row">
