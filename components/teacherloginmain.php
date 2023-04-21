@@ -5,7 +5,7 @@
 <div class="container-fluid login-image">
     <div class="row">
         <div class="offset-md-3 col-md-6 mt-5 mb-5">
-            <div class="login-container pt-5 pb-5 bg-dark text-light ps-5 pe-5">
+            <div class="rounded-3 pt-5 pb-5 bg-dark text-light ps-5 pe-5">
                 <!-- PHP Code -->
                 <?php
                     if(isset($_POST['login'])){
