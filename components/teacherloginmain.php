@@ -1,4 +1,12 @@
 <?php
+    include('../connection.php');
+    session_start();
+    if(isset($_SESSION['username'])){
+        header('location:http://localhost/Grievence-System/components/teachermainpage.php');
+    }
+?>
+
+<?php
     include('./teacherloginhead.php');
 ?>
 
@@ -18,7 +26,9 @@
 
                         if(mysqli_num_rows($result) > 0){
                             while($row = mysqli_fetch_assoc($result)){
-                                echo "Found";
+                                session_start();
+                                $_SESSION['username'] = $row['username'];
+                                header('location:http://localhost/Grievence-System/components/teachermainpage.php');
                             }
                         }
                         else{

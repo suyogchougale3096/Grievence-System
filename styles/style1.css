@@ -72,3 +72,19 @@ body {
 .main {
   font-size: 120px;
 }
+
+.logout {
+  background-color: red;
+  border-radius: 2px;
+  color: aliceblue;
+}
+
+
+/* teacher login head */
+.logout:hover {
+  background-color: red;
+  border-radius: 2px;
+  color: aliceblue;
+}
+
+/* teacher login main page */
