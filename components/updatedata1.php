@@ -1,5 +1,5 @@
 <?php
-    include('./teacherophead.php');
+    include('./teacherheadmain.php');
 ?>
 
 <div class="container w-50 border rounded-3 mt-5 mb-5 p-3">
@@ -38,7 +38,7 @@
     <div class = "fs-3 text-center mb-2">Complaint Information</div>
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Complaint</label>
-        <textarea type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name = "exampleFormControlInput1" rows="7" disabled><?php $temp = $_GET['complaints'];echo $temp; ?></textarea> 
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name = "exampleFormControlInput1" value = "<?php $temp = $_GET['complaints'];echo $temp; ?>" disabled>  
     </div>
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Status</label>
@@ -57,7 +57,7 @@
                     $selected = $_POST['status'];
                     // echo 'You have chosen: ' . $selected;
                     $ticket = $_GET['ticket'];
-                    $sql = "UPDATE complaint SET status = '{$selected}', solution = 'Verifying by faculty' WHERE ticket_number = '{$ticket}'";
+                    $sql = "UPDATE complaint SET status = '{$selected}' WHERE ticket_number = '{$ticket}'";
 
                     $result = mysqli_query($conn,$sql);
                     if($result){

@@ -1,8 +1,9 @@
 <?php
-    include('./teacherheadmain.php');
+    include('./teacherophead.php');
 ?>
 
 <div class="container mt-5 mb-5">
+    <div class="fs-3 text-center mb-3">Not Yet Process</div>
     <table class = "table table-stripped table-hover border">
     <?php
         include('../connection.php');
