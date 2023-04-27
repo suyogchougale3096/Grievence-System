@@ -76,6 +76,7 @@
             <option value="Not Yet Process">Not Yet Process</option>
             <option value="In Process">In Process</option>
             <option value="Completed">Completed</option>
+            <option value="Rejected">Rejected</option>
         </select>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Solution</label>

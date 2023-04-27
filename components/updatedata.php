@@ -75,7 +75,9 @@
             <option value="Not Yet Process">Not Yet Process</option>
             <option value="In Process">In Process</option>
             <option value="Completed">Completed</option>
+            <option value="Rejected">Rejected</option>
         </select>
+        
         <div class = "mt-2 text-center">
             <input type = "submit" class = "btn btn-success" value = "Update" name = "update"/>
         </div>
