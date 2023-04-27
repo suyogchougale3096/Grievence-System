@@ -18,7 +18,7 @@
 
                         if(mysqli_num_rows($result) > 0){
                             while($row = mysqli_fetch_assoc($result)){
-                                echo "Found";
+                                header('location:http://localhost/Grievence-System/components/studentmainpagehead.php');
                             }
                         }
                         else{
