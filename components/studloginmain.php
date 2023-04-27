@@ -1,4 +1,12 @@
 <?php
+    include('../connection.php');
+    session_start();
+    if(isset($_SESSION['username'])){
+        header('location:http://localhost/Grievence-System/components/studentmainpage.php');
+    }
+?>
+
+<?php
     include('./studloginhead.php');
 ?>
 
@@ -18,7 +26,11 @@
 
                         if(mysqli_num_rows($result) > 0){
                             while($row = mysqli_fetch_assoc($result)){
-                                header('location:http://localhost/Grievence-System/components/studentmainpagehead.php');
+                                session_start();
+                                $_SESSION['username'] = $row['prn_no'];
+                                echo "<script>";
+                                echo "location.replace('http://localhost/Grievence-System/components/studentmainpage.php?prn=$row[prn_no]')";
+                                echo "</script>";
                             }
                         }
                         else{

@@ -1,11 +1,3 @@
-<?php
-    include('../connection.php');
-    session_start();
-    if(!isset($_SESSION['username'])){
-        header('location:http://localhost/Grievence-System/components/studloginmain.php');
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -47,7 +39,7 @@
             </button>
             <div class="collapse navbar-collapse " id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a href="./studentlogout.php" class = "nav-link me-lg-5 logout">Log Out</a></li>
+                    <li class="nav-item"><a href="http://localhost/Grievence-System/components/studentmainpage.php?prn=<?php echo $_GET['prn'];  ?>" class = "nav-link me-lg-5 logout">Back To Main Page</a></li>
                 </ul>
             </div>
         </div>

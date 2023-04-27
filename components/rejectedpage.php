@@ -1,17 +1,17 @@
 <?php
-    include('./studentmainpagehead.php');
+    include('./studinnerpagehead.php');
     $prn = $_GET['prn'];
 ?>
 
 <ul class="nav nav-pills mb-5 bg-light">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="http://localhost/Grievence-System/components/studentmainpage.php?prn=<?php echo $prn ?>">Under Scrutiny</a>
+    <a class="nav-link" aria-current="page" href="http://localhost/Grievence-System/components/studentmainpage.php?prn=<?php echo $prn ?>">Under Scrutiny</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="http://localhost/Grievence-System/components/raisecomplaintpage.php?prn=<?php echo $prn ?>">Raise Complaints</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="http://localhost/Grievence-System/components/rejectedpage.php?prn=<?php echo $prn ?>">Rejected</a>
+    <a class="nav-link active" href="http://localhost/Grievence-System/components/rejectedpage.php?prn=<?php echo $prn ?>">Rejected</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href = "http://localhost/Grievence-System/components/historypage.php?prn=<?php echo $prn ?>">History</a>
@@ -23,7 +23,7 @@
     <?php
         include('../connection.php');
         
-        $sql = "SELECT * FROM complaint WHERE prn_number = '{$prn}' AND status = 'Not Yet Process' OR status = 'In Process'";
+        $sql = "SELECT * FROM complaint WHERE status = 'Rejected' AND prn_number = '{$prn}'";
 
         $result = mysqli_query($conn,$sql);
 
@@ -37,7 +37,7 @@
                 echo "<tr>";
                     echo "<td>$row[ticket_number]</td>";
                     echo "<td>$row[prn_number]</td>";
-                    echo "<td><a href = 'http://localhost/Grievence-System/components/scrutiny.php?ticket=$row[ticket_number]&prn=$row[prn_number]&fname=$row[fname]&mname=$row[mname]&lname=$row[lname]&branch=$row[branch]&degree=$row[degree]&complaints=$row[complaints]&status=$row[status]&catagory=$row[catagory_complaint]' class = 'btn btn-primary'>View</a></td>";
+                    echo "<td><a href = 'http://localhost/Grievence-System/components/rejected.php?ticket=$row[ticket_number]&prn=$row[prn_number]&fname=$row[fname]&mname=$row[mname]&lname=$row[lname]&branch=$row[branch]&degree=$row[degree]&complaints=$row[complaints]&status=$row[status]&catagory=$row[catagory_complaint]&solution=$row[solution]' class = 'btn btn-primary'>View</a></td>";
                 echo "</tr>";
             }
         }
