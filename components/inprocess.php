@@ -24,7 +24,7 @@
                 echo "<tr>";
                     echo "<td>$row[ticket_number]</td>";
                     echo "<td>$row[prn_number]</td>";
-                    echo "<td><a href = 'http://localhost/Grievence-System/components/inprocessupdate.php?ticket=$row[ticket_number]&prn=$row[prn_number]&fname=$row[fname]&mname=$row[mname]&lname=$row[lname]&branch=$row[branch]&degree=$row[degree]&complaints=$row[complaints]&status=$row[status]' class = 'btn btn-primary'>Update</a></td>";
+                    echo "<td><a href = 'http://localhost/Grievence-System/components/inprocessupdate.php?ticket=$row[ticket_number]&prn=$row[prn_number]&fname=$row[fname]&mname=$row[mname]&lname=$row[lname]&branch=$row[branch]&degree=$row[degree]&complaints=$row[complaints]&status=$row[status]&catagory=$row[catagory_complaint]' class = 'btn btn-primary'>Update</a></td>";
                 echo "</tr>";
             }
         }
