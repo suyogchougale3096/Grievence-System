@@ -12,8 +12,9 @@
     <div class = "border w-50 p-3 text-center"><a href="http://localhost/Grievence-System/components/completed.php"  class = "btn btn-success">Completed</a></div>
 </div>
 
-<div class = "mt-5 container-fluid fs-3">
-    Statistics(Data Analysis)
+<div class = "mt-5 d-flex justify-content-center fs-3 mt-5 mb-5">
+    <div id="chartContainer" style="height: 300px; width: 50%;">  
+  </div>  
 </div>
 
 <?php

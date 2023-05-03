@@ -6,6 +6,106 @@
     }
 ?>
 
+<?php
+    include('../connection.php');
+?>
+
+<?php
+    $sql1 = "SELECT * FROM complaint WHERE catagory_complaint = 'ragging'";
+
+    if ($result=mysqli_query($conn,$sql1))
+        {
+            $ragging=mysqli_num_rows($result);
+            // echo $ragging;
+        }
+?>
+
+<?php
+    $sql2 = "SELECT * FROM complaint WHERE catagory_complaint = 'exam'";
+
+    if ($result=mysqli_query($conn,$sql2))
+        {
+            $exam=mysqli_num_rows($result);
+            // echo $exam;
+        }
+?>
+
+
+<?php
+    $sql3 = "SELECT * FROM complaint WHERE catagory_complaint = 'classroom'";
+
+    if ($result=mysqli_query($conn,$sql3))
+        {
+            $classroom=mysqli_num_rows($result);
+            // echo $classroom;
+        }
+?>
+
+
+<?php
+    $sql4 = "SELECT * FROM complaint WHERE catagory_complaint = 'canteen'";
+
+    if ($result=mysqli_query($conn,$sql4))
+        {
+            $canteen=mysqli_num_rows($result);
+            // echo $canteen;
+        }
+?>
+
+<?php
+    $sql5 = "SELECT * FROM complaint WHERE catagory_complaint = 'electricity'";
+
+    if ($result=mysqli_query($conn,$sql5))
+        {
+            $electricity=mysqli_num_rows($result);
+            // echo $electricity;
+        }
+?>
+
+<?php
+    $sql6 = "SELECT * FROM complaint WHERE catagory_complaint = 'lab'";
+
+    if ($result=mysqli_query($conn,$sql6))
+        {
+            $lab=mysqli_num_rows($result);
+            // echo $lab;
+        }
+?>
+
+
+<?php
+    $sql7 = "SELECT * FROM complaint WHERE catagory_complaint = 'parking'";
+
+    if ($result=mysqli_query($conn,$sql7))
+        {
+            $parking=mysqli_num_rows($result);
+            // echo $parking;
+        }
+?>
+
+
+<?php
+    $sql8 = "SELECT * FROM complaint WHERE catagory_complaint = 'teaching'";
+
+    if ($result=mysqli_query($conn,$sql8))
+        {
+            $teaching=mysqli_num_rows($result);
+            // echo $teaching;
+        }
+?>
+
+<?php
+    $sql9 = "SELECT * FROM complaint WHERE catagory_complaint = 'others'";
+
+    if ($result=mysqli_query($conn,$sql9))
+        {
+            $others=mysqli_num_rows($result);
+            // echo $others;
+        }
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -27,6 +127,42 @@
         crossorigin="anonymous"
         ></script>
         <link rel="stylesheet" href="../styles/style1.css">
+
+        <!-- Code -->
+
+        <script type="text/javascript">  
+  window.onload = function () {  
+    var chart = new CanvasJS.Chart("chartContainer",  
+    {    
+      title: {  
+        text: "Total number of complaints in each catagory"        
+      },  
+      data: [  
+      {               
+        type: "column",  
+        dataPoints: [  
+         
+        { y: <?php echo $ragging; ?>, label: "ragging" },  
+        { y: <?php echo $classroom; ?>, label: "classroom" },  
+        { y: <?php echo $exam; ?>, label: "exam" },  
+        { y: <?php echo $canteen; ?>, label: "canteen" },  
+        { y: <?php echo $lab; ?>, label: "lab" },  
+        { y: <?php echo $electricity; ?>, label: "electricity" },  
+        { y: <?php echo $parking; ?>, label: "parking" },  
+        { y: <?php echo $teaching; ?>, label: "teaching" },  
+        { y: <?php echo $others; ?>, label: "others" }  
+        ]  
+      }  
+      ]  
+    });  
+  
+    chart.render();  
+  }  
+  </script>  
+  <script type="text/javascript"   
+src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+        <!-- Code -->
     </head>
     <body>
        <div class="navbar navbar-expand-lg header">
