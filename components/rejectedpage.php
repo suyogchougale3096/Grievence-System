@@ -14,7 +14,7 @@
     <a class="nav-link active" href="http://localhost/Grievence-System/components/rejectedpage.php?prn=<?php echo $prn ?>">Rejected</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href = "http://localhost/Grievence-System/components/historypage.php?prn=<?php echo $prn ?>">History</a>
+    <a class="nav-link" href = "http://localhost/Grievence-System/components/historypage.php?prn=<?php echo $prn ?>">Completed</a>
   </li>
 </ul>
 
